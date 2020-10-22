@@ -1,0 +1,9 @@
+.loading-svg-icon-1{
+    width: 40px;
+    height: 40px;
+    background: url(../svg/oval.svg) no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    /* margin: 0 50px; */
+    color: red;
+}

@@ -1,0 +1,41 @@
+img[lazy="loading"] {
+  /*your style here*/
+  background-color: #f1f4f3;
+  width: 100% !important;
+  height: 100% !important;
+}
+  img[lazy=error] {
+    /*your style here*/
+  }
+  img[lazy=loaded] {
+    /*your style here*/
+    // animation: aniOpacity 0.3s;
+  }
+  /*
+  or background-image
+  */
+  .yourclass[lazy=loading] {
+    /*your style here*/
+    background-color: #f1f4f3;
+  }
+  .yourclass[lazy=error] {
+    /*your style here*/
+  }
+  .yourclass[lazy=loaded] {
+    /*your style here*/
+    // animation: aniOpacity 0.3s;
+  }
+
+
+@keyframes aniOpacity {
+    0% {
+        opacity: 0;
+        /* transform: translateY(2px); */
+        /* transform: scale(0.98); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateY(0px); */
+        /* transform: scale(1); */
+    }
+}

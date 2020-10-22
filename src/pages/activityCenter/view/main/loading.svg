@@ -1,0 +1,32 @@
+<svg width="640" height="500" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="502" width="642" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_3" height="301.086214" width="636.954959" y="2.21528" x="2.066001" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_9" height="44.565092" width="52.173787" y="364.170924" x="48.805016" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_14" height="44.565092" width="52.173787" y="364.170924" x="48.805016" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_16" height="9.782571" width="52.173787" y="417.431653" x="48.805016" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_17" height="9.782571" width="52.173787" y="417.431641" x="172.717751" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_18" height="9.782571" width="52.173787" y="417.43165" x="300.9783" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_19" height="9.782571" width="52.173787" y="417.431653" x="428.1519" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_4" height="9.782571" width="52.173787" y="417.431653" x="534.673376" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_10" height="44.565092" width="52.173787" y="364.170903" x="171.630799" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_15" height="44.565092" width="52.173787" y="364.170903" x="171.630799" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_11" height="44.565092" width="52.173787" y="364.170921" x="299.891349" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_6" height="44.565092" width="52.173787" y="364.170921" x="299.891349" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_12" height="44.565092" width="52.173787" y="364.170924" x="428.151898" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_7" height="44.565092" width="52.173787" y="364.170924" x="428.151898" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_13" height="44.565092" width="52.173787" y="364.170901" x="534.673378" stroke-width="0" fill="#f9f9f9"/>
+  <rect stroke="#000" id="svg_8" height="44.565092" width="52.173787" y="364.170901" x="534.673378" stroke-width="0" fill="#f9f9f9"/>
+  <ellipse stroke="#000" ry="5.434768" rx="5.434768" id="svg_22" cy="282.365443" cx="303.468586" stroke-opacity="null" stroke-width="0" fill="#DDDDDD"/>
+  <ellipse stroke="#000" ry="5.434768" rx="5.434768" id="svg_23" cy="282.365459" cx="331.822506" stroke-opacity="null" stroke-width="0" fill="#DDDDDD"/>
+  <ellipse stroke="#000" ry="5.434768" rx="5.434768" id="svg_21" cy="282.365462" cx="357.967784" stroke-opacity="null" stroke-width="0" fill="#DDDDDD"/>
+ </g>
+</svg>

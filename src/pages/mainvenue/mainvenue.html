@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="x-ua-compitable" content="ie=edge">
+    <link rel="icon" href="./static/bicai.png" type="image/png">
+    <script>
+        window.h5_closeState = () => { }
+        window.pageAppear = () => { }
+    </script>
+    <!-- <style>
+        #loading {
+            width: 300px;
+            height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: #f55a5a;
+        }
+
+        #loading img {
+            width: 45px;
+            height: 54px;
+        }
+    </style> -->
+    <%= htmlWebpackPlugin.options.buildDate %>
+</head>
+
+<body>
+    <!-- <div id="loading">
+        <img id="loading-img"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAA2CAMAAABk1eDwAAAC/VBMVEUAAADnexr2ZQ79LCb/mBL+rxz/gAf/EQb/Rwz/RTL/oA//RDH/QhH/kQf9nAb9NhH9mRD+bAL+Nyj+uCf9QQD6vib/RDH/FAL/mgD/nBH/RjP/AAD/BQD/NBD/RDD/ohH/mQf/RTH/hgL/wCX/Mxr/ySv/Qi7/QwH/lAn/Hwr/ySz/pxL/QTL/EQj/AQD/yCf/HwP/igD+dAD/lQL/xyv/RDH/oRP/kQP/KgH/kAD+QgH/AAH/PwH/cgP+RTP+MgX/AQD+Lxb+sBz/nQr/BQH+hwH+lwD+NwH/BwD+yS//pxn/iQD/GgL/OQH/QAj/nBL/syD/WQD/IwD/dgH/0iv+yyn/XgD+uiH/zS7/OQD+ySr/AQH/RwL+lgL+AAD/bwD+qgz/RjP/OQD/RDH/RzP/Qi//OwD/AQD/SzL/PgD/QC7/Pyv/Oij/UDL/MyT/QgD7sBH/Lh//VAH/Oyv/gwL/VDT/WQD/UAD/RgD92mH/WDX/XjT/WjP/Nyb/Jhf/jwP94Gj+1l3/YTT/iAH/aAH/bjH/NAH/SQD9yUn/aDT/cS7/eib/MyD/DwT/lAL/oAH/gAH/eQD/YAD9xkL9vjX/ZTT7tiP/Khz/IRT/Ewv/mgb/fQL/dgL/cwD/bQD/SwD85HD90FX+zVH/azL8vDD/dir/HRL/TgX/ZQD/MQD8wTv/Ryz8uSv/Vir/fyT/fxz/Zxz/gxT/qBP/IQT/jAH/lwD79YL/0V7/yVv/qVD9xkb/eS//YCr/bif/ySL/WyD6shr/bhP/WBD/Gw7/Qgj/qQT/CgP/bAL/XQD/lUb/Zy3/Tiv/wiH/uRj/nxj/ixT/NRT/exD/tA7/owz/Zgn/cAP6+of773r+yk/9zU7/iED+tC7/hiP/QiP/TSD/vRz/Qhf/Lxb/TxL/rwn/pAD/YgD/vlr/eDz/dCP/iR7/cB3/dhn/kxj/KRD/YQ3/Kwf/cAH/JwD76HX/t07/nUn/cjn/jSD/kB7/kxv83HT+zWr+y07/gzr/0yz/zyqdGvD2AAAAYXRSTlMABQgO/v2BIPz4l1pBPTIoHR0cFhMP/vv38ejo0M3Gu66tpKCdfnpsZF1aSDg3+vTy7Ojk49nZ0srGxbClnpCLi3pzcmRbVE5BNCj65uXi39zc28zKyMa/sqyppZuJgnZRfZ5WIQAABXlJREFUSMd91gVUU2EYBmAD7O7u7u7u7m7YxtiYc3GNq4xtghNlIW6OGOqGCDoRB5MUVARRsEDEAAPs7q7j9//ce+cR5Ds7B87hOS/ffe/9uZQrayrUqdml0sjVdcsgjKvWZnBfwn/vvkNza/yPlW84rfu4aq0HNXXSyr1NIecenZdsjBjWoKSrP7Vbx/aL5zjHxOQGa49D6rlDuzdINm7ftC69xr9u2cIBvS9evOQcA9J7FyzgQ9F1PB6vM2MbdlwwoPfJkycv3gOaGyzHFKfuB8vjucGMZvCSX1hevfrgrA7ZkGIagWKBusK4LS1P6W6/gYI8+1AXi+y5Q+ch1UGxbklfZvuTYIEGY7uPtjxkmZlZm9b3wAbHQl+E/1u4so37IRYsg3E4Xcq4q7AC1ECgcjdI0LoMdUxXSq85q9PKjxMm/zwcXKpVRVSidK0msbhfvDEOdlUdhvnLuqXGtKFKqd9fDkugjSX78cUddkv+mZmfks74M06554ZUpG7kUG8T3DhqC9jhxPe469evx33L5KlQcHp0DOHKbV6ZWqUdEYIwtQUvMS5OQSpJxY3rj++rYInL2ggul9u4J6Ur7WLWgOTEOLMl9FYofMi4x1XOvMzNewc4KJAuZZKWCHkk2Q4Wru/EDYWvr6/SFw1540Mu4cbFWDyWKUWn08lN1yJ4rofTE8xJen3ojfcKX71er1DYuBh7iWUdqFLq9vPxySO0Ol1wtI+f2WK1JpnfK8yhVqv1lnkH2Iw0wNJWdCnzD210fWc/HHGNiDWY9YawJPNNS0GkwWCwKjK5XE14gFom5Q+sR5ey9/x2lZ0Lo8lXGCIjw5QKBWlB35CJGZrAAKHAg8+p2oMuxeQjSVfZNcA/KcKMRqNzwc2bSl+jMZJMDA8XCwV8DofVqDqlJxJ5r+8XZr9K03CPkobTp0+H6Q1JoUnwlfzohTGLxXLpROma0/1TT929IxN7BWUn3BKJREZLvPKms0ikJ/MDhFLAjVxc2KMoXafvrlQbcIEwIDCTDAPuXJBUIBJFKhM8KQy6bYViXWGwd47t1NELRzxk4qMJSsRFMeg3KDMFaA0XPAMrUuFt5DnPbaCP8AXqJ/FKvfE0WKtFmbjWgdnN6MO2Uhv9IiX56Fr3Ixyp8EkCqbT8CFWS8YmbGQxTlT5sXYKvHEvJ8ly/1p3NEQg9Pz6Oj49P+JDvLkWYGbrC7k5Xjvlt24o5pMsu7HjyaY+71AM3Rw9TyrSmL5/57cyiuIdACCODYAfGpVDPVcNBTp+jDh7Ys2VzMYfh8zkUZjTzXLW+/DnqxLYdW7dsXuvuzuLA/ENxKfRzVe3yl9sndkK4J+JskAx2DPNcjaf01uJd2PCzkprNlHL5622/nWgVT8yxL6E70YetKWhYHIUjXqpnSqk/++WzqIPbDuBwrGleeilOoHdCOM1LapaLoxSnK1Gw+AHES9WoJEcp8KRAOLMLXsUh4cOBoUuZFHslOsoPcUc4HYkhnw83mCmliTz6mN9B4Cgca0wdUioQCDrQh60/aOAoHGs25TCUCmQyoVqtbkkftqFyAsKfpqRkZSV7wrFgcfiIoUSZUKgWi8VFRUVI42l3nMjJefH0aUpWcjI6oR6IUS4gwAvm1Zs3zDu20vFdppwXz5/bktFxviMDRrnAwPDwtDS73f5uSGVaT/Q2+Yekptpsp07dvXtHraZYeFBQkCYjQ6Np3GdeB8DU1IT3VN61a6/PnLlfWJhd5BWYlgZOk8Hl9mreYviYCVNqV8SO/rMM7x6MqxRmZ7+yN3a4yoxjpvxI+L9lA7xcq6S7qd70mdFi+aquPStXKOHo8EUbJPCGrzJr2Iixk3vWK1+u7GnQecSKzpNrNyjT/QF1xKvLV6UzWgAAAABJRU5ErkJggg=="
+            alt="">
+    </div> -->
+    <section id="app"></section>
+
+    <script>
+            ; (function () {
+                var src = '//cdn.bootcss.com/eruda/1.5.2/eruda.min.js';
+                if (!/dev=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+                document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+                document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+            })();
+    </script>
+    <!-- <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/3.1.2/vue-router.min.js"></script>
+    <script src="https://cdn.bootcss.com/vuex/3.1.1/vuex.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.1/axios.min.js"></script> -->
+    <script src="https://finsuit.bicai365.com/fhc/jstween/jstween.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/jstimeline/jstimeline.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vue/2.6.10/vue.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vue-router/3.1.2/vue-router.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vuex/3.1.1/vuex.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/axios/0.18.1/axios.min.js"></script>
+
+    <script>
+        // let deg = 0;
+        // let c = 0.15;
+        // let JTLine = JTL.create();
+        // function aa() {
+        //     // JT.set("#loading-img", { rotationY: deg })
+        //     deg += 180;
+        //     console.log(deg);
+        //     JTLine.add("lz", 0);
+        //     JTLine.fromTo("#loading-img", 4.000 * c, { marginTop: 0 }, { marginTop: -150, repeat: 1, yoyo: true, ease: JT.Cubic.Out }, "lz")
+        //     JTLine.to("#loading-img", 4.000 * c, { rotationY: deg }, "lz+=" + 2.00 * c)
+        //     JTLine.play(0)
+        // }
+        // aa();
+
+        // JTLine.add(function () {
+        //     aa();
+        // }, '+=0');
+    </script>
+
+</body>
+
+</html>

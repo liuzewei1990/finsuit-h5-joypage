@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="x-ua-compitable" content="ie=edge">
+    <link rel="icon" href="./static/bicai.png" type="image/png">
+    <script>
+        window.h5_closeState = () => { }
+        window.pageAppear = () => { }
+    </script>
+    <%= htmlWebpackPlugin.options.buildDate %>
+</head>
+
+<body>
+
+    <section id="app"></section>
+
+    <script>
+            ; (function () {
+                var src = '//cdn.bootcss.com/eruda/1.5.2/eruda.min.js';
+                if (!/dev=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+                document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+                document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+            })();
+    </script>
+    <script src="https://finsuit.bicai365.com/fhc/jstween/jstween.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/jstimeline/jstimeline.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vue/2.6.10/vue.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vue-router/3.1.2/vue-router.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/vuex/3.1.1/vuex.min.js"></script>
+    <script src="https://finsuit.bicai365.com/fhc/axios/0.18.1/axios.min.js"></script>
+</body>
+
+</html>
